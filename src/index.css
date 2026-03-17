@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* Core UI Colors */
+  --color-background: #eff6ff; /* #eff6ff */
+  --color-foreground: oklab(0.4879 0.0337 0.012); /* #726969 */
+  --color-frost-blue: oklab(0.9252 0.0012 -0.0356); /* #dbeafe */
+  --color-muted: oklab(0.8554 -0.0001 -0.0001); /* #d4d4d4 */
+
+  /* Semantic Colors */
+  --color-primary: oklab(0.452 0.0136 -0.2314); /* #1d4ed8 */
+  --color-primary-foreground: oklab(1 0 0); /* #ffffff */
+  --color-success: oklab(0.7232 -0.1691 0.1506); /* #22c55e */
+  --color-danger: oklab(0.6033 0.1658 0.1044); /* #b91c1c */
+  --color-slate-gray: oklab(0.4462 -0.0031 -0.0142); /* #4b5563 */
+
+  /* Custom Palette */
+  --color-obsidian: #111827; /* #09090b (Black) */
+  --color-danger-light: #fee2e2;
+  --color-danger-dark: #b91c1c;
+  --color-success-light: #dcfce7;
+  --color-success-dark: #15803d;
+  --color-blue-light: #3b82f6; /* #2563eb (Blue) */
+  --color-blue-dark: #2563eb; /* #1d4ed8 (Blue Dark) */
+  --color-yellow-light: #fef9c3;
+  --color-yellow-dark: #a16207;
+  --color-purple-light: #c084fc;
+  --color-purple-dark: #9333ea;
+  --color-orange-light: #f97316;
+  --color-orange-dark: #ea580c;
+  --color-teal-light: oklab(0.7061 -0.0911 -0.0152); /* #14b8a6 */
+  --color-teal-dark: oklab(0.5891 -0.0768 -0.0121); /* #0d9488 */
+}
+
+@layer utilities {
+  .from-background {
+    --tw-gradient-from: var(--color-background) var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .to-background {
+    --tw-gradient-to: var(--color-background) var(--tw-gradient-to-position);
+  }
+}
+
+@layer base {
+  html {
+    @apply bg-gradient-to-t from-background via-white to-background;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+}

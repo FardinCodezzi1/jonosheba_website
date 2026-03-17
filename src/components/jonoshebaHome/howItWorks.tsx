@@ -1,0 +1,109 @@
+import { CircleCheckBig, Eye, MapPin, Bell } from "lucide-react";
+
+export default function HowItWorks() {
+  return (
+    <div className="h-60 rounded-2xl flex flex-col justify-center items-center px-10 gap-10 my-50">
+      <div className="text-4xl font-bold">কীভাবে কাজ করে</div>
+      <div className="text-2xl text-slate-gray text-center">
+        মাত্র কয়েকটি সহজ ধাপে এলাকার সমস্যা জানান এবং দেখুন কীভাবে আপনার <br />
+        এলাকা আরও ভালো হয়ে উঠছে
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-18">
+        {/* CARD 1 */}
+        <div className="w-72">
+          <div className="group relative bg-white h-84 rounded-2xl pt-10 px-6 pb-6 shadow-lg shadow-gray-300 border border-gray-200 flex flex-col items-center text-center">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-light w-9 h-9 rounded-full text-white flex items-center justify-center font-bold shadow-md">
+              1
+            </div>
+
+            <div className="bg-linear-to-t from-blue-light/90 to-blue-dark/90 w-16 h-16 rounded-2xl text-white flex items-center justify-center mb-6 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110">
+              <MapPin size={32} />
+            </div>
+
+            <div className="text-xl text-obsidian font-bold mb-3">
+              সমস্যার ধরন নির্বাচন
+            </div>
+
+            <div className="text-base text-slate-gray">
+              রাস্তাঘাট, পানি-পয়ঃনিষ্কাশন, বিদ্যুৎ কিংবা আইনশৃঙ্খলা - যেকোনো
+              সমস্যার জন্য সঠিক বিভাগ বেছে নিন
+            </div>
+          </div>
+        </div>
+
+        {/* CARD 2 */}
+        <div className="w-72">
+          <div className="group relative bg-white h-84 rounded-2xl pt-10 px-6 pb-6 shadow-lg shadow-gray-300 border border-gray-200 flex flex-col items-center text-center">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-light w-9 h-9 rounded-full text-white flex items-center justify-center font-bold shadow-md">
+              1
+            </div>
+
+            <div className="bg-linear-to-t from-success-dark to-success w-16 h-16 rounded-2xl text-white flex items-center justify-center mb-6 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110">
+              <CircleCheckBig size={32} />
+            </div>
+
+            <div className="text-xl text-obsidian font-bold mb-3">
+              অভিযোগ দাখিল করুন
+            </div>
+
+            <div className="text-base text-slate-gray">
+              সমস্যার বিস্তারিত বিবরণ, ছবি এবং ঠিকানা যোগ করুন যাতে কর্তৃপক্ষ
+              দ্রুত ব্যবস্থা নিতে পারে
+            </div>
+          </div>
+        </div>
+
+        {/* CARD 3 */}
+        <div className="w-72">
+          <div className="group relative bg-white h-84 rounded-2xl pt-10 px-6 pb-6 shadow-lg shadow-gray-300 border border-gray-200 flex flex-col items-center text-center">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-light w-9 h-9 rounded-full text-white flex items-center justify-center font-bold shadow-md">
+              1
+            </div>
+
+            <div className="bg-linear-to-t from-purple-dark to-purple-light w-16 h-16 rounded-2xl text-white flex items-center justify-center mb-6 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110">
+              <Bell size={32} />
+            </div>
+
+            <div className="text-xl text-obsidian font-bold mb-3">
+              প্রশাসন নোটিশ পাবে
+            </div>
+
+            <div className="text-base text-slate-gray">
+              আপনার অভিযোগ স্বয়ংক্রিয়ভাবে সংশ্লিষ্ট বিভাগের কাছে পৌঁছে যাবে
+              এবং দ্রুত ব্যবস্থা নেওয়া হবে
+            </div>
+          </div>
+        </div>
+
+        {/* CARD 4 */}
+        <div className="w-72">
+          <div className="group relative bg-white h-84 rounded-2xl pt-10 px-6 pb-6 shadow-lg shadow-gray-300 border border-gray-200 flex flex-col items-center text-center">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/3 bg-blue-light w-9 h-9 rounded-full text-white flex items-center justify-center font-bold shadow-md">
+              1
+            </div>
+
+            <div className="bg-linear-to-t from-orange-dark to-orange-light w-16 h-16 rounded-2xl text-white flex items-center justify-center mb-6 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110">
+              <Eye size={32} />
+            </div>
+
+            <div className="text-xl text-obsidian font-bold mb-3">
+              অগ্রগতি দেখুন
+            </div>
+
+            <div className="text-base text-slate-gray">
+              সমস্যা সমাধান না হওয়া পর্যন্ত প্রতিটি পদক্ষেপের আপডেট পেতে থাকুন
+              এবং ফলাফল দেখুন
+            </div>
+          </div>
+        </div>
+        <div className="bg-frost-blue p-4 rounded-4xl text-blue-light">
+          <div className="flex justify-center items-center gap-3">
+            <div className="p-1 rounded full bg-blue-light animate-pulse duration-infinite"></div>
+            <div>গড়ে ৩-৫ দিনে সমাধান হয় বেশিরভাগ সমস্যা</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
