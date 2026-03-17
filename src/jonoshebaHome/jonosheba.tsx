@@ -11,7 +11,7 @@ export default function Jonosheba() {
         <Phone />
       </div>
       {/* How It Works Section */}
-      <div className="w-full py-20 rounded-2xl my-20">
+      <div className="w-full py-20 rounded-2xl my-4">
         <HowItWorks />
       </div>
     </div>

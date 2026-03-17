@@ -46,7 +46,7 @@
 
 @layer base {
   html {
-    @apply bg-gradient-to-t from-background via-white to-background;
+    @apply bg-linear-to-t from-background via-white to-background;
   }
 
   body {
